@@ -1,0 +1,45 @@
+/*  content for main 
+
+========================
+1 - left for section 
+========================
+
+
+=======================
+2- right for section 
+=======================
+
+*/
+
+/* ========================
+1 - left for section 
+======================== */
+
+main {
+  gap: 1.5rem;
+}
+
+main .left-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+main .left-section button {
+  border: 1px solid var(--border);
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: var(--bgHeader);
+  /* color: var(--primary); */
+  font-size: 1.05rem;
+  opacity: 0.5;
+}
+main .left-section button:hover {
+  opacity: 1;
+  border: 0.5px solid var(--blue);
+}
+main .right-section {
+  flex-grow: 1;
+}

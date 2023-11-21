@@ -1,0 +1,121 @@
+header ul.flex {
+  gap: 16px;
+}
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9 rem;
+}
+
+header button {
+  font-size: 1.2rem;
+}
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+}
+header nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.66rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 40px rgb(34, 34, 36);
+}
+
+header button.menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+  header button.menu {
+    display: block;
+  }
+  header .Aa {
+    display: none;
+  }
+}
+
+/* header {
+  position: relative;
+} */
+
+header .fexed {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(1, 23, 33, 0.62);
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+header .fexed .modal {
+  animation: mymove 0.7s 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secandare);
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 30px;
+}
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+header .fexed .modal li {
+  /* margin-bottom: 1.5rem; */
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+header .fexed .modal li:first-child {
+  display: flex;
+
+  justify-content: end;
+}
+header .fexed .modal li a {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+header .fexed .modal li:not(:last-of-type) {
+  border-bottom: 1px solid var(--border);
+}
+
+header .icon-menu,
+header .mode {
+  background-color: var(--bgHeader);
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--subtitle);
+  border: 1px solid rgba(245, 222, 179, 0.43);
+}
+header .icon-menu:hover,
+header .mode:hover {
+  color: var(--title);
+  border: 1px solid wheat;
+}
+header .icon-close1 {
+  font-size: 1.5drem;
+  color: var(--subtitle);
+  transition: 0.3s;
+}
+header .icon-close1:hover {
+  font-size: 1.7rem;
+  color: crimson;
+  rotate: 180deg;
+}
